@@ -1,58 +1,45 @@
-📝 To Do List - Aplicação React
+# 📝 To Do List - Aplicação React
 
 Aplicação web simples para gerenciamento de tarefas usando React e TailwindCSS.Adicione, conclua, remova e filtre tarefas de forma intuitiva.
 
-🚀 Objetivo
+# 🚀 Objetivo
 
 Criar uma aplicação funcional para prática de conceitos fundamentais do React e estilização moderna com TailwindCSS.
 
-📋 Funcionalidades
+# 📋 Funcionalidades
 
-Adicionar Tarefas
+- **Adicionar Tarefas**
+  - Input controlado para criar novas tarefas.
+  - Botão ou Enter para enviar.
+  - Validação para evitar tarefas vazias.
+  - Limpar input após adicionar.
 
-Input controlado para criar novas tarefas.
+- **Exibir Lista de Tarefas**
+  - Mostrar título e status (pendente/concluída).
+  - Mensagem amigável se a lista estiver vazia.
 
-Botão ou Enter para enviar.
+- **Marcar como Concluída**
+  - Toggle de status via checkbox ou botão.
+  - Feedback visual (texto riscado, cor diferente).
 
-Validação para evitar tarefas vazias.
+- **Remover Tarefas**
+  - Botão de delete para cada tarefa.
+  - Remover do estado/lista.
+  - Confirmação opcional antes de deletar.
 
-Limpar input após adicionar.
+- **Filtrar Tarefas**
+  - Filtros: “Todas”, “Pendentes” ou “Concluídas”.
 
-Exibir Lista de Tarefas
+- **Contador de Tarefas**
+  - Total de tarefas.
+  - Quantidade de tarefas pendentes e concluídas.
 
-Mostrar título e status (pendente/concluída).
+- **Interface Responsiva**
+  - Design mobile-first.
+  - Layout adaptativo para desktop, tablet e celular.
 
-Mensagem amigável se a lista estiver vazia.
+---
 
-Marcar como Concluída
-
-Toggle de status via checkbox ou botão.
-
-Feedback visual (texto riscado, cor diferente).
-
-Remover Tarefas
-
-Botão de delete para cada tarefa.
-
-Remover do estado/lista.
-
-Confirmação opcional antes de deletar.
-
-Filtrar Tarefas
-
-Filtros: “Todas”, “Pendentes” ou “Concluídas”.
-
-Contador de Tarefas
-
-Total de tarefas.
-
-Quantidade de tarefas pendentes e concluídas.
-
-Interface Responsiva
-
-Design mobile-first.
-
-Layout adaptativo para desktop, tablet e celular.
 
 🏗 Estrutura do Projeto
 
