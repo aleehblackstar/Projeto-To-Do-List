@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>ToDo List</h1>
+      <h1>To Do List</h1>
       <p>Bem-vindo ao projeto! 🚀</p>
 
       <ul>
