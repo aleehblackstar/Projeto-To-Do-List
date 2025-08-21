@@ -1,109 +1,69 @@
-# 📝 To Do List - Aplicação React
+# React + TypeScript + Vite
 
-Aplicação web simples para gerenciamento de tarefas usando React e TailwindCSS.Adicione, conclua, remova e filtre tarefas de forma intuitiva.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# 🚀 Objetivo
+Currently, two official plugins are available:
 
-Criar uma aplicação funcional para prática de conceitos fundamentais do React e estilização moderna com TailwindCSS.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# 📋 Funcionalidades
+## Expanding the ESLint configuration
 
-- **Adicionar Tarefas**
-  - Input controlado para criar novas tarefas.
-  - Botão ou Enter para enviar.
-  - Validação para evitar tarefas vazias.
-  - Limpar input após adicionar.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-- **Exibir Lista de Tarefas**
-  - Mostrar título e status (pendente/concluída).
-  - Mensagem amigável se a lista estiver vazia.
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-- **Marcar como Concluída**
-  - Toggle de status via checkbox ou botão.
-  - Feedback visual (texto riscado, cor diferente).
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
 
-- **Remover Tarefas**
-  - Botão de delete para cada tarefa.
-  - Remover do estado/lista.
-  - Confirmação opcional antes de deletar.
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-- **Filtrar Tarefas**
-  - Filtros: “Todas”, “Pendentes” ou “Concluídas”.
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-- **Contador de Tarefas**
-  - Total de tarefas.
-  - Quantidade de tarefas pendentes e concluídas.
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-- **Interface Responsiva**
-  - Design mobile-first.
-  - Layout adaptativo para desktop, tablet e celular.
-
----
-
-
-🏗 Estrutura do Projeto
-
-````
-todo-list-react/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── TaskItem.jsx
-│   │   ├── TaskList.jsx
-│   │   └── TaskInput.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── package.json
-├── tailwind.config.js
-└── README.md
-````
-
-⚙️ Configuração e Uso
-Pré-requisitos
-
-Node.js (v16+)
-
-npm ou yarn
-
-Navegador moderno
-
-Editor de código (VS Code recomendado)
-
-Instalação
-# Clonar repositório
-git clone <URL_DO_REPOSITORIO>
-cd todo-list-react
-
-# Instalar dependências
-npm install
-
-# Iniciar servidor de desenvolvimento
-npm run dev
-
-
-A aplicação estará disponível em: http://localhost:5173
-
-💻 Tecnologias Utilizadas
-
-React - Biblioteca para interfaces.
-
-TailwindCSS - Estilização moderna e responsiva.
-
-Vite - Bundler rápido para desenvolvimento.
-
-📌 Observações
-
-Projeto focado em aprendizado e prática dos conceitos do React.
-
-Estrutura simples, modular e escalável.
-
-Futuras melhorias podem incluir:
-
-Persistência via localStorage
-
-Animações e microinterações
-
-Filtros avançados e categorias de tarefas
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
