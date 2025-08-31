@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+﻿# 📋 Projeto To Do List  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto simples de **Lista de Tarefas (To Do List)** desenvolvido com **React**, utilizando o **Local Storage** do navegador para persistência de dados.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot do projeto](public/screenshot.png) 
+> Um destaque visual do projeto rodando no navegador.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias Utilizadas  
+- ⚛️ [React](https://reactjs.org/)  
+- 🎨 CSS Puro  
+- 💾 Local Storage  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📦 Funcionalidades  
+- ➕ Adicionar tarefas  
+- ✅ Marcar tarefas como concluídas  
+- 🗑️ Remover tarefas  
+- ♻️ Armazenamento persistente no **Local Storage**  
+- 🌙☀️ Alternar entre **modo Dark e Light**  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ▶️ Como Rodar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/Projeto-To-Do-List-Boticario.git
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. cd Projeto-To-Do-List-Boticario
+
+3. npm install
+
+4. npm run dev
+
+5. Abrir o local no navegador - 
+Local Host
+
+6. Gerar versão de produção - 
+npm run build
+
+---
+
+## 📂 Estrutura de Pastas  
+
+```plaintext
+Projeto-To-Do-List-Boticario/
+├── public/                # Arquivos estáticos
+├── src/                   # Código-fonte
+│   ├── assets/            # Imagens e ícones
+│   ├── components/        # Componentes reutilizáveis
+│   ├── style/             # CSS
+│   ├── App.tsx            # Componente raiz
+│   ├── main.tsx           # Ponto de entrada do React
+│   └── index.css          # Estilos globais
+├── .gitignore
+├── eslint.config.js
+├── index.html             # Arquivo principal da aplicação
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
