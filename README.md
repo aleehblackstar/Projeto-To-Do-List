@@ -9,6 +9,12 @@ Este é um projeto simples de **Lista de Tarefas (To Do List)** desenvolvido com
 
 ---
 
+## 🚀 Deploy  
+
+👉 Acesse a aplicação online: [To-Do List - Vercel](https://to-do-list-projeto-desenvolve.vercel.app/)
+
+---
+
 ## 🚀 Tecnologias Utilizadas  
 - ⚛️ [React](https://reactjs.org/)  
 - 🎨 CSS Puro  
