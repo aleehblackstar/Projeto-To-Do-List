@@ -11,7 +11,7 @@ Este é um projeto simples de **Lista de Tarefas (To Do List)** desenvolvido com
 
 ## 🚀 Deploy  
 
-👉 Acesse a aplicação online: [To-Do List - Vercel](https://to-do-list-projeto-desenvolve.vercel.app/)
+👉 Acesse a aplicação online: [To-Do List - Vercel](https://projeto-to-do-list-pi.vercel.app/)
 
 ---
 
@@ -35,7 +35,7 @@ Este é um projeto simples de **Lista de Tarefas (To Do List)** desenvolvido com
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/Projeto-To-Do-List-Boticario.git
+   git clone https://github.com/seu-usuario/Projeto-To-Do-List.git
 
 2. cd Projeto-To-Do-List-Boticario
 
@@ -54,18 +54,18 @@ npm run build
 ## 📂 Estrutura de Pastas  
 
 ```plaintext
-Projeto-To-Do-List-Boticario/
-├── public/                # Arquivos estáticos
-├── src/                   # Código-fonte
-│   ├── assets/            # Imagens e ícones
-│   ├── components/        # Componentes reutilizáveis
-│   ├── style/             # CSS
-│   ├── App.tsx            # Componente raiz
-│   ├── main.tsx           # Ponto de entrada do React
-│   └── index.css          # Estilos globais
+Projeto-To-Do-List/
+├── public/                # Arquivos estáticos
+├── src/                   # Código-fonte
+│   ├── assets/            # Imagens e ícones
+│   ├── components/        # Componentes reutilizáveis
+│   ├── style/             # CSS
+│   ├── App.tsx            # Componente raiz
+│   ├── main.tsx           # Ponto de entrada do React
+│   └── index.css          # Estilos globais
 ├── .gitignore
 ├── eslint.config.js
-├── index.html             # Arquivo principal da aplicação
+├── index.html             # Arquivo principal da aplicação
 ├── package.json
 ├── package-lock.json
 ├── tsconfig.json
