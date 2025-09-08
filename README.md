@@ -37,7 +37,7 @@ Este é um projeto simples de **Lista de Tarefas (To Do List)** desenvolvido com
    ```bash
    git clone https://github.com/seu-usuario/Projeto-To-Do-List.git
 
-2. cd Projeto-To-Do-List-Boticario
+2. cd Projeto-To-Do-List
 
 3. npm install
 
